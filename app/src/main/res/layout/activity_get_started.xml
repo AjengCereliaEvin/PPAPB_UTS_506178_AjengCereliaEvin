@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedActivity"
+    android:paddingHorizontal="15dp"
+    android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:"
+            android:id="@+id/namaLabel"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namaInput"
+            android:layout_below="@+id/namaLabel"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat Badan Saat Ini :"
+            android:id="@+id/beratSaatIniLabel"
+            android:layout_below="@+id/namaInput"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/beratSaatIniSpinner"
+            android:layout_below="@+id/beratSaatIniLabel"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/beratSaatIniInput"
+            android:layout_below="@+id/beratSaatIniLabel"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/beratDiinginkanLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/beratSaatIniInput"
+            android:layout_marginTop="16dp"
+            android:text="Berat Badan Yang Diinginkan :" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/beratDiinginkanSpinner"
+            android:layout_below="@+id/beratSaatIniLabel"
+            android:layout_marginTop="8dp" />
+
+
+        <EditText
+            android:id="@+id/beratDiinginkanInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beratDiinginkanLabel"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tujuan Diet:"
+            android:id="@+id/tujuanDietLabel"
+            android:layout_below="@+id/beratDiinginkanInput"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tujuanDietSpinner"
+            android:layout_below="@+id/tujuanDietLabel"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Target Capaian:"
+            android:layout_gravity="center"
+            android:id="@+id/tanggalTargetLabel"
+            android:layout_below="@+id/tujuanDietSpinner"
+            android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal :"
+                    android:textSize="16dp"
+                    android:id="@+id/tanggalTarget"
+                    android:layout_below="@+id/tujuanDietSpinner"
+                    android:layout_marginTop="16dp" />
+
+
+
+                <DatePicker
+                    android:id="@+id/tanggalTargetPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tanggalTargetLabel"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/green"
+                    android:datePickerMode="calendar" />
+
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Target Maksimum Kalori Harian:"
+            android:id="@+id/jumlahKaloriLabel"
+            android:layout_below="@+id/tanggalTargetPicker"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jumlahKaloriInput"
+            android:layout_below="@+id/jumlahKaloriLabel"
+            android:layout_marginTop="8dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpanButton"
+            android:text="Simpan"
+            android:layout_below="@+id/jumlahKaloriInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/green"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/HitungButton"
+                    android:text="Hitung"
+                    android:layout_below="@+id/jumlahKaloriInput"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/green"/>
+
+
+
+        </LinearLayout>
+
+
+</ScrollView>
+
+
